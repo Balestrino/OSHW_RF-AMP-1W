@@ -6,7 +6,7 @@
 <setting alwaysvectorfont="no"/>
 <setting verticaltext="up"/>
 </settings>
-<grid distance="0.1" unitdist="inch" unit="inch" style="lines" multiple="1" display="no" altdistance="0.01" altunitdist="inch" altunit="inch"/>
+<grid distance="0.01" unitdist="inch" unit="inch" style="lines" multiple="1" display="no" altdistance="0.01" altunitdist="inch" altunit="inch"/>
 <layers>
 <layer number="1" name="Top" color="4" fill="1" visible="no" active="no"/>
 <layer number="16" name="Bottom" color="1" fill="1" visible="no" active="no"/>
@@ -14852,6 +14852,9 @@ DIN A4, landscape with extra doc field</description>
 <pinref part="C14" gate="G$1" pin="+"/>
 <wire x1="170.18" y1="43.18" x2="170.18" y2="48.26" width="0.1524" layer="91"/>
 <wire x1="170.18" y1="48.26" x2="162.56" y2="48.26" width="0.1524" layer="91"/>
+<pinref part="L3" gate="1" pin="L2_2"/>
+<wire x1="134.874" y1="47.752" x2="154.94" y2="47.752" width="0.1524" layer="91"/>
+<wire x1="154.94" y1="47.752" x2="154.94" y2="48.26" width="0.1524" layer="91"/>
 </segment>
 </net>
 <net name="N$8" class="0">
@@ -14928,6 +14931,14 @@ DIN A4, landscape with extra doc field</description>
 <pinref part="L2" gate="1" pin="L2_1"/>
 <wire x1="83.82" y1="53.34" x2="78.994" y2="53.34" width="0.1524" layer="91"/>
 <wire x1="78.994" y1="53.34" x2="78.994" y2="53.848" width="0.1524" layer="91"/>
+</segment>
+</net>
+<net name="N$17" class="0">
+<segment>
+<pinref part="L3" gate="1" pin="L2_1"/>
+<pinref part="T1" gate="G$1" pin="B"/>
+<wire x1="134.874" y1="53.848" x2="177.8" y2="53.848" width="0.1524" layer="91"/>
+<wire x1="177.8" y1="53.848" x2="177.8" y2="53.34" width="0.1524" layer="91"/>
 </segment>
 </net>
 </nets>
